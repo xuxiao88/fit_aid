@@ -28,6 +28,8 @@ export default {
     bmi_desc: 'BMI说明',
     bmi_formula: 'BMI定义：体重(kg)/身高(m)^2',
     standard: '标准',
+    no_result: '暂无结果',
+    please_input: '请输入身高和体重',
   },
   en: {
     title: 'BMI Calculator',
@@ -58,6 +60,8 @@ export default {
     bmi_desc: 'BMI Description',
     bmi_formula: 'BMI Formula: weight(kg)/height(m)^2',
     standard: 'Standard',
+    no_result: 'No result',
+    please_input: 'Please enter height and weight',
   },
   ja: {
     title: 'BMI計算機',
@@ -88,6 +92,8 @@ export default {
     bmi_desc: 'BMIの説明',
     bmi_formula: 'BMI定義：体重(kg)/身長(m)^2',
     standard: '基準',
+    no_result: '結果なし',
+    please_input: '身長と体重を入力してください',
   },
   fr: {
     title: 'Calculateur d’IMC',
@@ -118,5 +124,7 @@ export default {
     bmi_desc: 'Description de l’IMC',
     bmi_formula: 'Définition IMC : poids(kg)/taille(m)^2',
     standard: 'Norme',
+    no_result: 'Aucun résultat',
+    please_input: 'Veuillez saisir la taille et le poids',
   },
 }

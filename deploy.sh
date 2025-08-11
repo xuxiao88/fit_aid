@@ -48,10 +48,6 @@ shopt -s dotglob nullglob  # 包含隐藏文件（如 .nojekyll），忽略空�
 cp -r "${MAIN_DIR}/dist/"* ./
 shopt -u dotglob nullglob
 
-# ✅ 添加 404.html 支持 history 模式（关键！）
-echo "✅ 创建 404.html 以支持 Vue Router history 模式"
-cp index.html 404.html
-
 # ✅ 提交更改
 echo "📝 提交更改..."
 git add .
