@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/fit_aid/',
+  // base: '/fit_aid/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
