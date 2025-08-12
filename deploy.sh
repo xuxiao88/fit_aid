@@ -36,6 +36,7 @@ cd "${GH_PAGES_DIR}"
 git checkout gh-pages
 
 # ✅ 可选：拉取最新内容，避免冲突
+git fetch origin
 git reset --hard origin/gh-pages
 
 # 🧹 清理旧文件（保留 .git）
