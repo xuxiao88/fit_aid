@@ -61,6 +61,6 @@ git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 
 # ✅ 推送到远程 gh-pages 分支
 echo "📤 推送到远程 gh-pages 分支..."
-git push origin gh-pages
+git push --force-with-lease origin gh-pages
 
 echo "✅ 部署完成！"
