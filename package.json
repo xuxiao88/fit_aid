@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "deploy": "npm run build && bash deploy.sh"
+    "deploy": "npm run build && echo 'fitaid.fit' > dist/CNAME && bash deploy.sh"
   },
   "dependencies": {
     "element-plus": "^2.10.6",
