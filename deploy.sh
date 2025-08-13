@@ -47,6 +47,7 @@ git rm -rf . 2>/dev/null || true
 echo "📂 复制 dist 文件..."
 shopt -s dotglob nullglob  # 包含隐藏文件（如 .nojekyll），忽略空匹配
 cp -r "${MAIN_DIR}/dist/"* ./
+echo 'fitaid.fit' > ./CNAME
 shopt -u dotglob nullglob
 
 # ✅ 提交更改

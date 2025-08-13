@@ -8,12 +8,16 @@ const langOptions = [
   { value: 'en', label: 'English' },
   { value: 'ja', label: '日本語' },
   { value: 'fr', label: 'Français' },
+  { value: 'es', label: 'Español' },
+  { value: 'de', label: 'Deutsch' },
 ]
 function getSystemLang() {
   const sys = navigator.language || navigator.userLanguage || 'en'
   if (sys.startsWith('zh')) return 'zh'
   if (sys.startsWith('ja')) return 'ja'
   if (sys.startsWith('fr')) return 'fr'
+  if (sys.startsWith('es')) return 'es'
+  if (sys.startsWith('de')) return 'de'
   return 'en'
 }
 const currentLang = ref(getSystemLang())
