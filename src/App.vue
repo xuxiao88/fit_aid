@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { locale } = useI18n()
 const langOptions = [
   { value: 'zh', label: '中文' },
   { value: 'en', label: 'English' },
@@ -11,28 +10,42 @@ const langOptions = [
   { value: 'es', label: 'Español' },
   { value: 'de', label: 'Deutsch' },
 ]
+
+const { t, locale } = useI18n();
+const currentLang = ref(locale.value); // 直接用 i18n 当前值
+
+
+// 获取当前语言（适配 /bmi/zh/ 这种路径）
 function getSystemLang() {
-  const sys = navigator.language || navigator.userLanguage || 'en'
-  if (sys.startsWith('zh')) return 'zh'
-  if (sys.startsWith('ja')) return 'ja'
-  if (sys.startsWith('fr')) return 'fr'
-  if (sys.startsWith('es')) return 'es'
-  if (sys.startsWith('de')) return 'de'
-  return 'en'
+  const pathArr = window.location.pathname.split('/');
+  const pathLocale = pathArr[2];
+  const supportedLocales = ['zh', 'en', 'ja', 'fr', 'es', 'de'];
+  return supportedLocales.includes(pathLocale) ? pathLocale : 'en';
 }
-const currentLang = ref(getSystemLang())
-locale.value = currentLang.value
+
+// 初始化 currentLang
+currentLang.value = getSystemLang();
+locale.value = currentLang.value;
+
 function changeLang(val) {
-  locale.value = val
+  currentLang.value = val;
+  locale.value = val;
+  const pathArr = window.location.pathname.split('/');
+  pathArr[2] = val; // 替换语言段（第二段）
+  window.location.pathname = pathArr.join('/');
+}
+
+function goTo(val){
+  window.location.pathname = `/${val}/${currentLang.value}`;
 }
 </script>
 
 <template>
-  <el-menu mode="horizontal" router style="border-bottom: 1px solid #eee; display: flex; align-items: center;">
-    <el-menu-item index="/bmi">
-      BMI计算器 / BMI Calculator
+  <el-menu mode="horizontal" style="border-bottom: 1px solid #eee; display: flex; align-items: center;">
+    <el-menu-item @click="goTo('bmi')">
+      {{ t('bmi_menu') }}
     </el-menu-item>
-    <el-select v-model="currentLang" @change="changeLang" size="small" style="margin-left:auto; margin-right:24px; width:120px;">
+    <el-select v-model="currentLang" @change="changeLang" size="small" style="margin-left:auto; width:120px;">
       <el-option
         v-for="item in langOptions"
         :key="item.value"
@@ -41,7 +54,9 @@ function changeLang(val) {
       />
     </el-select>
   </el-menu>
-  <router-view />
+  <main>
+    <slot />
+  </main>
 </template>
 
 <style scoped></style>
