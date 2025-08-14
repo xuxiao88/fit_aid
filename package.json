@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build && mv dist/src/* dist/ && rm -rf dist/src",
+    "build": "vite build && mv dist/src/* dist/ && rm -rf dist/src && cp -r ads.txt dist/ads.txt",
     "preview": "vite preview --open",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
