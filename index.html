@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit Aid</title>
-    <meta name="description" content="A collection of fitness-related tools providing BMI, WHR, calorie calculation, and more.">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1807760377246365" crossorigin="anonymous"></script>
-    <script type="module" crossorigin src="/assets/index-CYBGRWAH.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DVw0mqUT.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // 支持的语言
+    const supported = ['en', 'zh', 'ja', 'fr', 'es', 'de'];
+    const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    const mainLang = lang.split('-')[0];
+    if (supported.includes(mainLang)) {
+      window.location.replace('/bmi/' + mainLang + '/');
+    } else {
+      window.location.replace('/bmi/');
+    }
+  </script>
+</head>
+<body>
+  <noscript>
+    Please enable JavaScript to be redirected.<br>
+    <a href="/bmi/">Go to BMI page</a>
+  </noscript>
+</body>
 </html>
