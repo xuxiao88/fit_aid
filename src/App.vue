@@ -57,6 +57,11 @@ function goTo(val){
   <main>
     <slot />
   </main>
+  <footer style="text-align:center; margin: 32px 0 8px 0; color: #888; font-size: 14px;">
+    <a :href="`/footer/${currentLang}/about.html`" target="_blank" style="margin: 0 12px; color: #888; text-decoration: underline;">{{ t('about_us') }}</a>
+    |
+    <a :href="`/footer/${currentLang}/contact.html`" target="_blank" style="margin: 0 12px; color: #888; text-decoration: underline;">{{ t('contact_us') }}</a>
+  </footer>
 </template>
 
 <style scoped></style>

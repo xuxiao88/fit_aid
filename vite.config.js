@@ -17,7 +17,7 @@ export default defineConfig({
         ja: locale.ja,
         fr: locale.fr,
         es: locale.es,
-        de: locale.de
+        de: locale.de,
       },
       selector: '[data-i18n]',
       getTranslationKey: el => el.getAttribute('data-i18n'),
@@ -30,6 +30,8 @@ export default defineConfig({
       modifyElement: (el, value, {key,language,translations}) => {
         if(el.tagName === 'META' && el.hasAttribute('name') && el.getAttribute('name') === 'description') {
           el.setAttribute('content', value);
+        }else{
+          el.textContent = value;
         }
       }
     })
@@ -38,7 +40,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         def: path.resolve(__dirname, 'index.html'),
+        about: path.resolve(__dirname, 'src/footer/about.html'),
+        contact: path.resolve(__dirname, 'src/footer/contact.html'),
         bmi: path.resolve(__dirname, 'src/bmi/index.html'),
+
         // whr: path.resolve(__dirname, 'src/whr/index.html'),
         // 如有其它页面，继续添加
       }
