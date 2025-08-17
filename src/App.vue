@@ -36,14 +36,18 @@ function changeLang(val) {
 }
 
 function goTo(val){
-  window.location.pathname = `/${val}/${currentLang.value}`;
+  window.location.pathname = `/${val}/${currentLang.value}/`;
 }
 </script>
 
 <template>
+
   <el-menu mode="horizontal" style="border-bottom: 1px solid #eee; display: flex; align-items: center;">
     <el-menu-item @click="goTo('bmi')">
       {{ t('bmi_menu') }}
+    </el-menu-item>
+    <el-menu-item @click="goTo('whr')">
+      {{ t('whr_menu') }}
     </el-menu-item>
     <el-select v-model="currentLang" @change="changeLang" size="small" style="margin-left:auto; width:120px;">
       <el-option

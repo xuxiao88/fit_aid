@@ -1,6 +1,5 @@
 import { createApp, h } from 'vue';
 import App from './App.vue';
-import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import { createI18n } from 'vue-i18n';
 
@@ -26,6 +25,7 @@ import es_menu from '../locales/es/menu.json';
 import de_menu from '../locales/de/menu.json';
 
 import Bmi from './bmi/bmi.vue';
+import Whr from './whr/whr.vue';
 
 // 适配 /bmi/zh/ 这种路径，语言在第二段
 const pathArr = window.location.pathname.split('/');
@@ -52,7 +52,9 @@ const i18n = createI18n({
 let PageComponent = null;
 if (window.location.pathname.includes('/bmi')) {
 	PageComponent = Bmi;
-} else {
+}else if (window.location.pathname.includes('/whr')) {
+	PageComponent = Whr;	
+}else {
 	PageComponent = {
 		template: '<div>404 Not Found</div>'
 	};
@@ -64,5 +66,4 @@ const app = createApp({
 	}
 });
 app.use(i18n);
-app.use(ElementPlus);
 app.mount('#app');

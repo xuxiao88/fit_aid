@@ -1,3 +1,6 @@
 {
-    "bmi_menu": "Calculateur d’IMC"
+    "bmi_menu": "Calculateur d’IMC",
+    "whr_menu": "Calculateur du rapport taille-hanches",
+    "about_us": "À propos de nous",
+    "contact_us": "Contactez-nous"
 }

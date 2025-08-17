@@ -3,6 +3,9 @@ import { viteGenerateHtmlI18n } from 'vite-plugin-generate-html-i18n';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 import locale from './locales/vite_locale.js';
 
@@ -10,6 +13,12 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
     viteGenerateHtmlI18n({
       translations: {
         en: locale.en,
@@ -43,8 +52,8 @@ export default defineConfig({
         about: path.resolve(__dirname, 'src/footer/about.html'),
         contact: path.resolve(__dirname, 'src/footer/contact.html'),
         bmi: path.resolve(__dirname, 'src/bmi/index.html'),
+        whr: path.resolve(__dirname, 'src/whr/index.html'),
 
-        // whr: path.resolve(__dirname, 'src/whr/index.html'),
         // 如有其它页面，继续添加
       }
     }
