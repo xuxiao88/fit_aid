@@ -1,3 +1,19 @@
 {
-    
+    "whr_title": "Taille-Hüft-Verhältnis Rechner",
+    "gender": "Geschlecht",
+    "waist": "Taille",
+    "hip": "Hüfte",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "waist_guide_title": "Anleitung zur Taille-Messung",
+    "waist_guide": "Messen Sie Ihren Bauchumfang an der schmalsten Stelle, normalerweise über dem Bauchnabel und unter den Rippen.",
+    "hip_guide_title": "Anleitung zur Hüft-Messung",
+    "hip_guide": "Messen Sie Ihre Hüften an der breitesten Stelle um Ihre Gesäßmuskeln. Stellen Sie sicher, dass das Maßband waagerecht und straff, aber nicht eingequetscht ist.",
+    "whr_desc": "WHR-Klassifizierung",
+    "risk": "Mäßig erhöhtes Risiko",
+    "high_risk": "Stark erhöhtes Risiko",
+    "normal": "Normal",
+    "normal_desc": "Ein gesundes Verhältnis von Taille zu Hüfte zeigt ein geringeres Risiko für herzbedingte Erkrankungen und Diabetes.",
+    "risk_desc": "Ein mittleres Risiko weist auf eine erhöhte Wahrscheinlichkeit von Gesundheitsproblemen hin. Eine Lebensstiländerung wird empfohlen.",
+    "high_risk_desc": "Ein hohes Risiko zeigt ein erheblich erhöhtes Risiko für herzbedingte Erkrankungen, Schlaganfall und Diabetes. Eine ärztliche Konsultation wird empfohlen."
 }

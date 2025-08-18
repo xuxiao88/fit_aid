@@ -1,3 +1,19 @@
 {
-    
+    "whr_title": "Waist-Hip Ratio Calculator",
+    "gender": "Gender",
+    "waist": "Waist",
+    "hip": "Hip",
+    "male": "Male",
+    "female": "Female",
+    "waist_guide_title": "Waist Measurement Guide",
+    "waist_guide": "Measure your waist at the narrowest point, typically above your navel and below your rib cage.",
+    "hip_guide_title": "Hip Measurement Guide",
+    "hip_guide": "Measure your hips at the widest point around your buttocks. Keep the measuring tape horizontal and snug, but not compressing the area.",
+    "whr_desc": "WHR Classification",
+    "risk": "Moderate Risk",
+    "high_risk": "High Risk",
+    "normal": "Normal",
+    "normal_desc": "A healthy waist-to-hip ratio indicates a lower risk of heart disease and diabetes.",
+    "risk_desc": "A moderate risk indicates an increased likelihood of health issues. Lifestyle changes are recommended.",
+    "high_risk_desc": "A high risk indicates a significantly increased risk of heart disease, stroke, and diabetes. Medical consultation is recommended."
 }

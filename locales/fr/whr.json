@@ -1,3 +1,19 @@
 {
-    
+    "whr_title": "Calculateur du rapport taille-hanches",
+    "gender": "Sexe",
+    "waist": "Taille",
+    "hip": "Hanches",
+    "male": "Homme",
+    "female": "Femme",
+    "waist_guide_title": "Guide de mesure de la taille",
+    "waist_guide": "Mesurez votre taille au point le plus étroit, généralement au-dessus de votre nombril et en dessous de votre cage thoracique.",
+    "hip_guide_title": "Guide de mesure des hanches",
+    "hip_guide": "Mesurez vos hanches au point le plus large autour de vos fesses. Maintenez le ruban à mesurer horizontal et bien ajusté, mais sans comprimer la zone.",
+    "whr_desc": "Classification RTH",
+    "risk": "Risque Modéré",
+    "high_risk": "Risque Élevé",
+    "normal": "Normal",
+    "normal_desc": "Un rapport taille-hanches sain indique un risque moindre de maladie cardiaque et de diabète.",
+    "risk_desc": "Un risque modéré indique une probabilité accrue de problèmes de santé. Des changements de mode de vie sont recommandés.",
+    "high_risk_desc": "Un risque élevé indique un risque significativement accru de maladie cardiaque, d'accident vasculaire cérébral et de diabète. Une consultation médicale est recommandée."
 }

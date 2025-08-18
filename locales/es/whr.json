@@ -1,3 +1,19 @@
 {
-    
+    "whr_title": "Calculadora de relación cintura-cadera",
+    "gender": "Género",
+    "waist": "Cintura",
+    "hip": "Cadera",
+    "male": "Hombre",
+    "female": "Mujer",
+    "waist_guide_title": "Guía para medir la cintura",
+    "waist_guide": "Mide tu cintura en el punto más estrecho, generalmente por encima del ombligo y por debajo de la caja torácica.",
+    "hip_guide_title": "Guía para medir la cadera",
+    "hip_guide": "Mide tus caderas en el punto más ancho alrededor de tus glúteos. Mantén la cinta métrica horizontal y ajustada, pero sin comprimir la zona.",
+    "whr_desc": "Clasificación RCC",
+    "risk": "Riesgo Moderado",
+    "high_risk": "Alto Riesgo",
+    "normal": "Normal",
+    "normal_desc": "Una relación saludable entre cintura y cadera indica un menor riesgo de enfermedades cardíacas y diabetes.",
+    "risk_desc": "Un riesgo moderado indica una probabilidad aumentada de problemas de salud. Se recomiendan cambios en el estilo de vida.",
+    "high_risk_desc": "Un alto riesgo indica un riesgo significativamente aumentado de enfermedad cardíaca, accidente cerebrovascular y diabetes. Se recomienda consultar a un médico."
 }
